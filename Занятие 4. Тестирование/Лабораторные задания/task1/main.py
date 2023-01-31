@@ -92,7 +92,7 @@ class InternalCombustionEngineAudiCar(AudiCar):
 
 
 class ElectricAudiCar(AudiCar):
-    def __init__(self, brand: str, color: str, model: str, age: Union[int, float], charging: float):
+    def __init__(self, brand: str, color: str, model: str, age: Union[int, float],  charging: float):
         super().__init__(brand, color, model, age)
         self.charging = charging
 
