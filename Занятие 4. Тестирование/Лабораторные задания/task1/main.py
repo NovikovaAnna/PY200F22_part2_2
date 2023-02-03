@@ -10,11 +10,15 @@ class AudiCar:
         self._color = color
         self.model = model
         self.age = age
-        AudiCar.count()
+        self.count()
 
-    @staticmethod
-    def count():
-        AudiCar.counter += 1
+    #@staticmethod
+    #def count():
+        #AudiCar.counter += 1
+
+    @classmethod
+    def count(cls):
+        cls.counter += 1
 
     @property
     def brand(self) -> str:
